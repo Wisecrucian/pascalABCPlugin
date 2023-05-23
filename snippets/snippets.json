@@ -1,8 +1,23 @@
 {
 
 
+  "Variable definition": {
+    "prefix": "var",
+    "body": [
+      "var ${1:variable_name}: ${2:variable_type};"
+    ],
+    "description": "PascalABC.NET Variable definition"
+  },
 
- 
-  
+  "Auto/type variable definition": {
+    "prefix": "var",
+    "body": [
+      "var ${1:variable_name}: ${2:variable_type} := ${2:variable_value};"
+    ],
+    "description": "PascalABC.NET Variable definition"
+  }
+
+
+
 
 }
