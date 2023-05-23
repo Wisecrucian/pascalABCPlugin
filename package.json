@@ -1,0 +1,48 @@
+{
+  "name": "pas",
+  "displayName": "PascalABCplugin",
+  "description": "PascalABC Programming Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "pas",
+        "aliases": [
+          "PascalABC Programming Language",
+          "pas"
+        ],
+        "extensions": [
+          ".pas"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pas",
+        "scopeName": "source.pas",
+        "path": "./syntaxes/pas.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "pas",
+        "path": "./snippets/snippets.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[pas]": {
+        "editor.semanticHighlighting.enabled": true
+      }
+    }
+  },
+  "dependencies": {
+    "prismjs": "^1.29.0"
+  }
+}
