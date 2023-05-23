@@ -15,9 +15,35 @@
       "var ${1:variable_name}: ${2:variable_type} := ${2:variable_value};"
     ],
     "description": "PascalABC.NET Variable definition"
+  },
+
+  "Procedure definition": {
+    "prefix": "procedure",
+    "body": [
+      "procedure ${1:procedure_name}()",
+      "begin",
+      "//TODO",
+      "end;"
+    ],
+    "description": "PascalABC.NET Variable definition"
+  },
+
+  "function": {
+    "prefix": "function",
+    "body": [
+      "function ${1:functionName}(${2:variableName}: ${3:variableValue}): ${4:returnType};",
+      "begin",
+      "\t// TODO",
+      "end;"
+    ],
+    "description": "PascalABC.NET defines a function that returns a value and can be called from other parts of the program."
+  },
+
+  "functionShort": {
+    "prefix": "function",
+    "body": [
+      "function ${1:functionName}(${2:variableName}) := //TODO;"
+    ],
+    "description": "PascalABC.NET defines a function that returns a value and can be called from other parts of the program."
   }
-
-
-
-
 }
