@@ -17,6 +17,15 @@
     "description": "PascalABC.NET Variable definition"
   },
 
+  "Multiple description of variables with initialization":
+  {
+    "prefix": "var",
+    "body": [
+      "var (${1:variable_names}) := (${2:variable_values});"
+    ],
+    "description": "PascalABC.NET Multiple description var"
+  },
+
   "Procedure definition": {
     "prefix": "procedure",
     "body": [
