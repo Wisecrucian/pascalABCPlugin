@@ -210,5 +210,22 @@
       "${1:value} in ${2:value}..${3:value}"
     ],
     "description": "PascalABC.NET in"
+  },
+
+  "readLn": {
+    "prefix": "readLn",
+    "body": [
+      "ReadLn();"
+    ],
+    "description": "PascalABC.NET reads a line of text from the console."
+  },
+
+  "random": {
+    "prefix": "random",
+    "body": [
+      "Randomize;",
+      "Random(x);"
+    ],
+    "description": "PascalABC.NET generates a random integer between 0 and x-1."
   }
 }
