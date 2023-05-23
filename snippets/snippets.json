@@ -45,5 +45,89 @@
       "function ${1:functionName}(${2:variableName}) := //TODO;"
     ],
     "description": "PascalABC.NET defines a function that returns a value and can be called from other parts of the program."
+  },
+
+
+
+  "Begin block": {
+    "prefix": "begin",
+    "body": [
+      "begin",
+      "${1:// program code}",
+      "end;"
+    ],
+    "description": "PascalABC.NET Begin block"
+  },
+
+  "End block": {
+    "prefix": "end",
+    "body": [
+      "end;"
+    ],
+    "description": "PascalABC.NET End block"
+  },
+
+  "Loop": {
+    "prefix": "loop",
+    "body": [
+      "loop ${1:count} do",
+      "begin",
+      " //TODO",
+      "end;"
+    ],
+    "description": "PascalABC.NET Loop"
+  },
+
+  "For": {
+    "prefix": "for",
+    "body": [
+      "for var ${1:variable_name}:= ${2:variable_value} to ${3:variable_value} do",
+      "begin",
+      " //TODO",
+      "end;"
+    ],
+    "description": "PascalABC.NET For"
+  },
+
+  "Ternary":
+  {
+    "prefix": "if",
+    "body": [
+      "if ${1:value} then ${2:value} else ${3:value}"
+    ],
+    "description": "PascalABC.NET if ternary"
+  },
+
+  "if-then": {
+    "prefix": "if-then",
+    "body": [
+      "if (condition) then",
+      "begin",
+      "\t// statements",
+      "end;"
+    ],
+    "description": "PascalABC.NET executes a set of statements if a condition is true."
+  },
+
+  "repeat-until": {
+    "prefix": "repeat-until",
+    "body": [
+      "repeat",
+      "\t// statements",
+      "until (condition);"
+    ],
+    "description": "PascalABC.NET repeatedly executes a set of statements until a condition is true."
+  },
+
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case variable of",
+      "\tvalue1: // statements",
+      "\tvalue2: // statements",
+      "\telse // statements",
+      "end;"
+    ],
+    "description": "PascalABC.NET executes different sets of statements depending on the value of a variable."
   }
 }
