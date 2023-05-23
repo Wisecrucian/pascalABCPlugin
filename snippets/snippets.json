@@ -138,5 +138,77 @@
       "end;"
     ],
     "description": "PascalABC.NET executes different sets of statements depending on the value of a variable."
+  },
+
+
+  "Print":
+  {
+    "prefix": "print",
+    "body": [
+      "Print(${1:variable_values});"
+    ],
+    "description": "PascalABC.NET print"
+  },
+
+  "Println":
+  {
+    "prefix": "println",
+    "body": [
+      "Println(${1:variable_values});"
+    ],
+    "description": "PascalABC.NET println"
+  },
+  "Write":
+  {
+    "prefix": "write",
+    "body": [
+      "Write(${1:variable_values});"
+    ],
+    "description": "PascalABC.NET write"
+  },
+
+  "Writeln":
+  {
+    "prefix": "writeln",
+    "body": [
+      "Writeln(${1:variable_values});"
+    ],
+    "description": "PascalABC.NET Writeln"
+  },
+
+  "Min":
+  {
+    "prefix": "min",
+    "body": [
+      "Min(${1:variable_values},${2:variable_values});"
+    ],
+    "description": "PascalABC.NET Min"
+  },
+
+  "Max":
+  {
+    "prefix": "Max",
+    "body": [
+      "Max(${1:variable_values},${2:variable_values});"
+    ],
+    "description": "PascalABC.NET Max"
+  },
+
+  "Swap":
+  {
+    "prefix": "swap",
+    "body": [
+      "Swap(${1:variable_values},${2:variable_values});"
+    ],
+    "description": "PascalABC.NET Swap"
+  },
+
+  "In":
+  {
+    "prefix": "in",
+    "body": [
+      "${1:value} in ${2:value}..${3:value}"
+    ],
+    "description": "PascalABC.NET in"
   }
 }
