@@ -5,9 +5,9 @@
   "author": {
     "name": "Maxim Polyanskiy"
   },
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
-    "vscode": "^1.76.0"
+    "vscode": "^1.74.3"
   },
   "categories": [
     "Programming Languages"
@@ -51,5 +51,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Wisecrucian/pascalABCPlugin"
-  }
+  },
+  "publisher": "MaximPolyanskiy"
 }
