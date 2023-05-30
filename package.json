@@ -2,6 +2,9 @@
   "name": "pas",
   "displayName": "PascalABCplugin",
   "description": "PascalABC Programming Language",
+  "author": {
+    "name": "Maxim Polyanskiy"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.76.0"
@@ -44,5 +47,9 @@
   },
   "dependencies": {
     "prismjs": "^1.29.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wisecrucian/pascalABCPlugin"
   }
 }
