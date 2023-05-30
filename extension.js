@@ -22,10 +22,7 @@ class PascalABCTokenProvider {
     colors.forEach((color) => {
       const name = color.$.name;
       const foreground = color.$.foreground;
-      console.log(`name="${name}" foreground="${foreground}"`);
     });
-
-
 
     return tokens;
   }
