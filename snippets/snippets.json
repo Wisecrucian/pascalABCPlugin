@@ -1,32 +1,32 @@
 {
 
 
-  "Variable definition": {
+  "Обьявление переменной с автовыведением типа": {
     "prefix": "var",
     "body": [
       "var ${1:variable_name}: ${2:variable_type};"
     ],
-    "description": "PascalABC.NET Variable definition"
+    "description": "Обьявление переменной с автовыведением типа"
   },
 
-  "Auto/type variable definition": {
+  "Обьявление переменной": {
     "prefix": "var",
     "body": [
       "var ${1:variable_name}: ${2:variable_type} := ${2:variable_value};"
     ],
-    "description": "PascalABC.NET Variable definition"
+    "description": "Обьявление переменной"
   },
 
-  "Multiple description of variables with initialization":
+  "Обьявление нескольких переменных":
   {
     "prefix": "var",
     "body": [
       "var (${1:variable_names}) := (${2:variable_values});"
     ],
-    "description": "PascalABC.NET Multiple description var"
+    "description": "Обьявление нескольких переменных"
   },
 
-  "Procedure definition": {
+  "Процедура": {
     "prefix": "procedure",
     "body": [
       "procedure ${1:procedure_name}()",
@@ -34,10 +34,10 @@
       "//TODO",
       "end;"
     ],
-    "description": "PascalABC.NET Variable definition"
+    "description": "Процедура"
   },
 
-  "function": {
+  "Функция с телом": {
     "prefix": "function",
     "body": [
       "function ${1:functionName}(${2:variableName}: ${3:variableValue}): ${4:returnType};",
@@ -45,27 +45,27 @@
       "\t// TODO",
       "end;"
     ],
-    "description": "PascalABC.NET defines a function that returns a value and can be called from other parts of the program."
+    "description": "Функция с телом"
   },
 
-  "functionShort": {
+  "Короткая функция": {
     "prefix": "function",
     "body": [
       "function ${1:functionName}(${2:variableName}) := //TODO;"
     ],
-    "description": "PascalABC.NET defines a function that returns a value and can be called from other parts of the program."
+    "description": "Короткая функция"
   },
 
 
 
-  "Begin block": {
+  "Блок begin-end": {
     "prefix": "begin",
     "body": [
       "begin",
       "${1:// program code}",
       "end;"
     ],
-    "description": "PascalABC.NET Begin block"
+    "description": "Блок begin-end"
   },
 
   "End block": {
@@ -73,10 +73,10 @@
     "body": [
       "end;"
     ],
-    "description": "PascalABC.NET End block"
+    "description": "end"
   },
 
-  "Loop": {
+  "loop цикл": {
     "prefix": "loop",
     "body": [
       "loop ${1:count} do",
@@ -84,10 +84,10 @@
       " //TODO",
       "end;"
     ],
-    "description": "PascalABC.NET Loop"
+    "description": "loop цикл"
   },
 
-  "For": {
+  "for цикл": {
     "prefix": "for",
     "body": [
       "for var ${1:variable_name}:= ${2:variable_value} to ${3:variable_value} do",
@@ -95,19 +95,19 @@
       " //TODO",
       "end;"
     ],
-    "description": "PascalABC.NET For"
+    "description": "for цикл"
   },
 
-  "Ternary":
+  "Тернарный оператор":
   {
     "prefix": "if",
     "body": [
       "if ${1:value} then ${2:value} else ${3:value}"
     ],
-    "description": "PascalABC.NET if ternary"
+    "description": "Тернарный оператор"
   },
 
-  "if-then": {
+  "Конструкция if-then": {
     "prefix": "if-then",
     "body": [
       "if (condition) then",
@@ -115,17 +115,17 @@
       "\t// statements",
       "end;"
     ],
-    "description": "PascalABC.NET executes a set of statements if a condition is true."
+    "description": "Конструкция if-then"
   },
 
-  "repeat-until": {
+  "Конструкция repeat-until": {
     "prefix": "repeat-until",
     "body": [
       "repeat",
       "\t// statements",
       "until (condition);"
     ],
-    "description": "PascalABC.NET repeatedly executes a set of statements until a condition is true."
+    "description": "Конструкция repeat-until"
   },
 
   "case": {
@@ -137,70 +137,70 @@
       "\telse // statements",
       "end;"
     ],
-    "description": "PascalABC.NET executes different sets of statements depending on the value of a variable."
+    "description": "case"
   },
 
 
-  "Print":
+  "Печать текста с пробелами":
   {
     "prefix": "print",
     "body": [
       "Print(${1:variable_values});"
     ],
-    "description": "PascalABC.NET print"
+    "description": "Печать текста с пробелами"
   },
 
-  "Println":
+  "Печать текста с пробелами и переводом строки":
   {
     "prefix": "println",
     "body": [
       "Println(${1:variable_values});"
     ],
-    "description": "PascalABC.NET println"
+    "description": "Печать текста с пробелами и переводом строки"
   },
-  "Write":
+  "Печать текста":
   {
     "prefix": "write",
     "body": [
       "Write(${1:variable_values});"
     ],
-    "description": "PascalABC.NET write"
+    "description": "Печать текста"
   },
 
-  "Writeln":
+  "Печать текста с переводом строки":
   {
     "prefix": "writeln",
     "body": [
       "Writeln(${1:variable_values});"
     ],
-    "description": "PascalABC.NET Writeln"
+    "description": "Печать текста с переводом строки"
   },
 
-  "Min":
+  "Нахождение минимума из двух":
   {
     "prefix": "min",
     "body": [
       "Min(${1:variable_values},${2:variable_values});"
     ],
-    "description": "PascalABC.NET Min"
+    "description": "Нахождение минимума из двух"
   },
 
-  "Max":
+  "Нахождение максимума из двух":
   {
     "prefix": "Max",
     "body": [
       "Max(${1:variable_values},${2:variable_values});"
     ],
-    "description": "PascalABC.NET Max"
+    "description": "Нахождение максимума из двух"
   },
 
-  "Swap":
+  "Swap function":
   {
     "prefix": "swap",
     "body": [
       "Swap(${1:variable_values},${2:variable_values});"
     ],
-    "description": "PascalABC.NET Swap"
+    "description": "Swap function"
   },
 
   "In":
@@ -209,7 +209,7 @@
     "body": [
       "${1:value} in ${2:value}..${3:value}"
     ],
-    "description": "PascalABC.NET in"
+    "description": "in"
   },
 
   "readLn": {
