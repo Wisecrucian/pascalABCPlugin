@@ -166,7 +166,7 @@
                 },
                 {
                   "name": "storage.type",
-                  "match": "\\b(integer|real|string|boolean|char|byte|word|longint|shortint|extended|single|double|comp|currency|pointer)\\b"
+                  "match": "\\b(integer|real|string|boolean|char|byte|word|longint|shortint|extended|single|double|comp|currency|pointer|int)\\b"
                 }
                 
             ]
